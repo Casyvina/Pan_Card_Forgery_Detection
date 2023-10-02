@@ -1,5 +1,7 @@
 # Pan_Card_Forgery_Detection
 
+![](pan_card.png)
+
 PAN cards are an important form of identification in Nigeria. However, there is a growing problem of fake PAN cards being used for fraudulent purposes. This project aims to use computer vision to identify fake PAN cards.
 
 ## Table of Contents
