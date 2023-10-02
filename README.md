@@ -7,12 +7,11 @@ PAN cards are an important form of identification in Nigeria. However, there is 
 - [Project Overview](#project-overview)
 - [Benefits](#benefits)
 - [Installation](#installation)
-- [Usage](#usuage)
-- [Data](#data)
-- [Model](#model)
+- [Usage](#usage)
+- [Conclusion](#conclusion)
 - [Contributing](#contributing)
 - [License](#license)
-- [Conclusion](#conclusion)
+
 
 ## Project Overview
 
@@ -30,6 +29,26 @@ Improving the security of PAN cards.
 
 
 ## Installation
+
+Step to run application:
+Step 1:	Create the copy of the project.
+Step 2: Open command prompt and change your current path 
+to folder where you can find 'app.py' file.
+Step 3: Create environment by command given below-
+conda create -name <environment name>
+Step 4: Activate environment by command as follows-
+conda activate <environment name>
+Step 5: Use command below to install required dependencies-
+python -m pip install -r requirements.txt
+Step 6: Run application by command;
+python app.py
+You will get url copy it and paste in browser.
+Step 7: You have sample_data folder where you can get images to test.
+
+## Usage
+Update directory in the original folder to company original pan card template sample. 
+Use the template sample to verify pan card submitted by personels for verification.
+
 
 ## Conclusion
 
