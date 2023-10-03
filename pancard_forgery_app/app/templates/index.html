@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pan Card Forgery Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./static/css/style.css">
+  </head>
+
+  <body class="text-center">
+    <!-- navbar --> 
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <h1 style="color: #e3f2fd; padding-left: 5%;">Pan Card Forgery</h1>
+      <a href="", style="color: whitesmoke; padding-right: 5%;">Made by Casyvina-ai</a>
+    </nav>
+    
+    <div class="p-5"><label for=""><h2>Upload Pan Card Image</h2></label></div>
+    <div class="pad">
+      <p>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <ul>
+              {% for messages in messages %}
+                <li>{{ messages }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+      </p>
+
+
+      <form action="/" method="post" enctype="multipart/form-data">
+        <!-- upload -->
+       <div class="input-group mb-3 pd-left-3">
+           <input type="file" class="form-control" id="file_upload" name="file_upload">
+           <!-- <label class="input-group-text" for="inputGroupFile02">Upload</label> -->
+       </div>
+       <!-- checkbutton -->
+       <div> <button type="submit" class="btn btn-primary btn-lg">Inspect</button></div>
+       </form>
+    </div>
+    <!-- result -->
+    <div style="text-align: center; padding-top: 50px; ">
+      <h3>{{pred}}</h3>
+      <img src="{{file_url}}" style="width: 400px;">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+  <footer>
+    <div class="bottom-right-image">
+      <img src="./static/logo/logo_stretch_100px.png" alt="" width="200px">
+    </div>
+  </footer>
+</html>

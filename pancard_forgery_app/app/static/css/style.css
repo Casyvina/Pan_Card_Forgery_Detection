@@ -1,0 +1,9 @@
+ .pd-left-3{
+    padding: 0 10% 0 10%;
+ }
+
+ .bottom-right-image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+ }
